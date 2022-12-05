@@ -1,9 +1,9 @@
 const { exec } = require('node:child_process');
 const fs = require('fs');
 
-let numTestnets = 1;
+let numTestnets = 11;
 let promises = [];
-const TESTNET_PREFIX = 'test-remix-state-change-';
+const TESTNET_PREFIX = 'first-remix-challenges-';
 for(let i = 0; i < numTestnets; i++) {
     promises.push(new Promise((resolve, reject) => {
         const testnetName = TESTNET_PREFIX + i;
